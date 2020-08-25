@@ -1,0 +1,41 @@
+﻿<Window x:Class="DrawGrids_Revit.InputWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrawGrids_Revit"
+        mc:Ignorable="d" WindowStyle="ToolWindow"
+        Title="Оси" MinHeight="560" Height="560" MinWidth="380" Width="380">
+    <Grid>
+        <StackPanel>
+            <!--Vertical axes-->
+            <TextBlock FontSize="20" Margin="10,0,0,0" >Вертикальные оси:</TextBlock>
+            <TextBlock Margin="10,0,0,0" >Количество осей</TextBlock>
+            <TextBox x:Name="textBox_CountOfVert" Background="Gray"  Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <TextBlock Margin="10,0,0,0" >Расстояние между осями</TextBlock>
+            <TextBox x:Name="textBox_DistanceOfVert" Background="Gray" Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <TextBlock Margin="10,0,0,0" >Длина оси</TextBlock>
+            <TextBox x:Name="textBox_RangeOfVert" Background="Gray" Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <!--Horizontal axes-->
+            <TextBlock FontSize="20" Margin="10,0,0,0" >Горизонтальные оси:</TextBlock>
+            <TextBlock Margin="10,0,0,0" >Количество осей</TextBlock>
+            <TextBox x:Name="textBox_CountOfHor" Background="Gray" Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <TextBlock Margin="10,0,0,0" >Расстояние между осями</TextBlock>
+            <TextBox x:Name="textBox_DistanceOfHor" Background="Gray" Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <TextBlock Margin="10,0,0,0" >Длина оси</TextBlock>
+            <TextBox x:Name="textBox_RangeOfHor" Background="Gray" Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <!--Levels-->
+            <TextBlock FontSize="20" Margin="10,0,0,0" >Уровни:</TextBlock>
+            <TextBlock Margin="10,0,0,0" >Количество уровней</TextBlock>
+            <TextBox x:Name="textBox_CountOfLevels" Background="Gray" Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <TextBlock Margin="10,0,0,0" >Расстояние между уровнями</TextBlock>
+            <TextBox x:Name="textBox_DistanceOfLevels" Background="Gray" Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <TextBlock Margin="10,0,0,0" >Длина уровня</TextBlock>
+            <TextBox x:Name="textBox_RangeOfLevels" Background="Gray" Foreground="White" Width="350" HorizontalAlignment="Left" Margin="10,0,0,10" >0</TextBox>
+            <!--Exit Button-->
+            <Button Click="acceptButton_Click" Width="100" HorizontalAlignment="Left" Margin="10,15,0,10" >
+                OK
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
