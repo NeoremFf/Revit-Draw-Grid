@@ -32,6 +32,7 @@ namespace DrawGrids_Revit
             UIApplication uiapp = commandData.Application;
             doc = uiapp.ActiveUIDocument.Document;
 
+
             // Show window where user can write data
             InputWin inputWin = new InputWin();
             inputWin.ShowDialog();
